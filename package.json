@@ -1,0 +1,23 @@
+{
+    "name": "teamgenerator",
+    "version": "1.0.0",
+    "description": "The application can be used to generate a team from the command line. Once generated, the webpage will show the team's profile and information based off a series of questions that were asked.",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib",
+        "test": "test"
+    },
+    "scripts": {
+      "test": "jest"
+    },
+    "keywords": [],
+    "author": "Dominic Finch",
+    "license": "MIT",
+    "dependencies": {
+        "fs":"^0.0.1-security",
+      "inquirer": "^8.2.0",
+      "jest": "^27.5.1"
+      
+    }
+  }
+  

@@ -8,16 +8,14 @@
         "test": "test"
     },
     "scripts": {
-      "test": "jest"
+        "test": "jest"
     },
     "keywords": [],
     "author": "Dominic Finch",
     "license": "MIT",
     "dependencies": {
-        "fs":"^0.0.1-security",
-      "inquirer": "^8.2.0",
-      "jest": "^27.5.1"
-      
+        "fs": "^0.0.1-security",
+        "inquirer": "^8.2.4",
+        "jest": "^27.5.1"
     }
-  }
-  
+}

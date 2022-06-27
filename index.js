@@ -1,7 +1,55 @@
 const Engineer = require("./lib/Engineer");
 const Manager = require("./lib/Manager");
 const Intern = require("./lib/Intern");
-//packages
+
 const fs = require("fs");
 const inquirer = require("inquirer");
-//Questions for Team Manger Info
+
+function start() {
+    inquirer.prompt([{
+        type: 'input',
+        name: 'managerName',
+        message: "What is the name of your manager?"
+    }, 
+    {
+        type: 'input',
+        name: 'employeeId',
+        message: "What is your employee's ID?"
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email?'
+    },
+    {
+        type: 'input',
+        name: 'officeNumber',
+        message: 'what is your office number?'
+    }
+    
+])
+.then((questions) => {
+    menu()
+
+}) 
+
+}
+
+function menu() {
+    inquirer
+    .prompt({
+        type: 'list',
+        name: 'menu',
+        message: 'What would you like to do?',
+        choices: ['Engineer', 'Intern', 'Done']
+    })
+    .then((option) => {
+
+    })
+
+}
+//function to ask engineer, ask intern, generate html
+//condtional
+//how to add to the end of an empty array
+
+start();

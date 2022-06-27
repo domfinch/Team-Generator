@@ -44,12 +44,62 @@ function menu() {
         choices: ['Engineer', 'Intern', 'Done']
     })
     .then((option) => {
+        
 
     })
 
+}
+
+function engineer() {
+    inquirer.prompt([{
+        type: 'input',
+        name: 'engineerName',
+        message: 'What is your name?'
+    },
+    {
+        type: 'input',
+        name: 'engineerID',
+        message: "What is your ID?"
+    },
+    {
+        type: 'input',
+        name: 'engineerEmail',
+        message: 'What is your email?'
+    },
+    {
+        type: 'input',
+        name: 'EngineerGithub',
+        message: 'What is your Github username?'
+    }
+
+])
+}
+
+function intern() {
+    inquirer.prompt([{
+        type: 'input',
+        name: 'internName',
+        message: 'What is your name?'
+    },
+    {
+        type: 'input',
+        name: 'internID',
+        message: "What is your ID?"
+    },
+    {
+        type: 'input',
+        name: 'internEmail',
+        message: 'What is your email?'
+    },
+    {
+        type: 'input',
+        name: 'school',
+        message: 'What is the name of the school you go to?'
+    }
+])
 }
 //function to ask engineer, ask intern, generate html
 //condtional
 //how to add to the end of an empty array
 
-start();
+start()

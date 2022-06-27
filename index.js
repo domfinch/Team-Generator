@@ -44,7 +44,12 @@ function menu() {
         choices: ['Engineer', 'Intern', 'Done']
     })
     .then((option) => {
-        
+        if (answer.engineer) {
+            engineer();
+        }
+        if (answer.intern) {
+            intern();
+        }
 
     })
 
